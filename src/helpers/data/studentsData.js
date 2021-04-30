@@ -164,9 +164,9 @@ const dearlyLoved = () => {
 };
 
 const followTheLight = () => {
-  randomStudent = students[Math.floor(Math.random()*students.length)]
-  if (randomStudent.isDead === false) {
-    randomStudent.isDead = true;
+  index = students[Math.floor(Math.random()*students.length)]
+  if (students[index].isDead === false) {
+    students[index].isDead = true;
   }
 };
 
