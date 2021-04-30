@@ -157,7 +157,7 @@ const livingStudents = () => {
   })
 };
 
-const dearlyLoved = () => {
+const dearlyBeloved = () => {
   students.map((student) => {
     return student.isDead === true;
   })
@@ -169,9 +169,9 @@ const followTheLight = () => {
     students[index].isDead = true;
   }
 };
-
+ 
 export {
   livingStudents,
-  dearlyLoved,
+  dearlyBeloved,
   followTheLight
 };
