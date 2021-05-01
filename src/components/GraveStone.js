@@ -3,21 +3,21 @@ import { Card, CardTitle } from 'reactstrap';
 import PropTypes from 'prop-types';
 
 function GraveStone({
-  firstName, 
+  firstName,
   lastName
 }) {
   return (
-    <div className='live-student'>
+    <div className='dearlyBeloved'>
         <Card>
           <CardTitle>{firstName} {lastName}</CardTitle>
         </Card>
     </div>
-  )
+  );
 }
 
 GraveStone.propTypes = {
   firstName: PropTypes.string.isRequired,
   lastName: PropTypes.string.isRequired
-}
+};
 
 export default GraveStone;

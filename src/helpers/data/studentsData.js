@@ -2,7 +2,7 @@ const students = [
   {
     id: 1,
     firstName: 'Ben',
-    lastName: 'Jarret',
+    lastName: 'Jarrett',
     isDead: false
   },
   {
@@ -37,38 +37,38 @@ const students = [
   },
   {
     id: 7,
-    firstName: "Martin",
-    lastName: "Sisk",
+    firstName: 'Martin',
+    lastName: 'Sisk',
     isDead: false
   },
   {
     id: 8,
-    firstName: "Gabby",
-    lastName: "Tobermann",
+    firstName: 'Gabby',
+    lastName: 'Tobermann',
     isDead: false
   },
   {
     id: 9,
-    firstName: "Matthew",
-    lastName: "Gonzales",
+    firstName: 'Matthew',
+    lastName: 'Gonzales',
     isDead: false
   },
   {
     id: 10,
-    firstName: "John",
-    lastName: "Maple",
+    firstName: 'John',
+    lastName: 'Maple',
     isDead: false
   },
   {
     id: 11,
-    firstName: "Holly",
-    lastName: "Parsons",
+    firstName: 'Holly',
+    lastName: 'Parsons',
     isDead: false
   },
   {
     id: 12,
-    firstName: "Hunter",
-    lastName: "Juneau",
+    firstName: 'Hunter',
+    lastName: 'Juneau',
     isDead: false
   },
   {
@@ -76,7 +76,7 @@ const students = [
     firstName: 'Jim',
     lastName: 'Conner',
     isDead: false
-  }, 
+  },
   {
     id: 14,
     firstName: 'Jesse',
@@ -86,15 +86,15 @@ const students = [
   {
     id: 15,
     firstName: 'Juan',
-    lastName: 'Davila', 
+    lastName: 'Davila',
     isDead: false
-  }, 
+  },
   {
     id: 16,
     firstName: 'Jim',
     lastName: 'Conner',
     isDead: false
-  }, 
+  },
   {
     id: 17,
     firstName: 'Katy',
@@ -106,13 +106,13 @@ const students = [
     firstName: 'Lindsey',
     lastName: 'Satterfiled',
     isDead: false
-  }, 
+  },
   {
     id: 19,
     firstName: 'Mitchell',
     lastName: 'Crumbley',
     isDead: false
-  }, 
+  },
   {
     id: 20,
     firstName: 'Nathan',
@@ -151,27 +151,20 @@ const students = [
   }
 ];
 
-const livingStudents = () => {
-  students.map((student) => {
-    return student.isDead === false;
-  })
-};
+const getLivingStudents = () => students.filter((student) => student.isDead === false);
 
-const dearlyBeloved = () => {
-  students.map((student) => {
-    return student.isDead === true;
-  })
-};
+const dearlyBeloved = () => students.filter((student) => student.isDead === true);
 
 const followTheLight = () => {
-  index = students[Math.floor(Math.random()*students.length)]
-  if (students[index].isDead === false) {
-    students[index].isDead = true;
-  }
+  const currentLiveStudents = getLivingStudents();
+  const randomStudent = currentLiveStudents[Math.floor(Math.random() * students.length)];
+  const index = students.indexOf(randomStudent);
+  students[index].isDead = true;
+  console.warn(randomStudent);
 };
- 
+
 export {
-  livingStudents,
+  getLivingStudents,
   dearlyBeloved,
-  followTheLight
+  followTheLight,
 };

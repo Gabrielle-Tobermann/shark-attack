@@ -2,5 +2,12 @@
 @import 'variables';
 
 body {
-  background-color: $favColor;
+  background-color: $bgColor !important;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.SharkTank {
+  width: 400px;
 }
