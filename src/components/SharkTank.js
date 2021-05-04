@@ -10,6 +10,7 @@ function SharkTank({ livingStudents }) {
         key={element.id}
         firstName={element.firstName}
         lastName={element.lastName}
+        image={element.image}
         />
       ))}
     </div>

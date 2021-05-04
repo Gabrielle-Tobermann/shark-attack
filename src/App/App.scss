@@ -1,5 +1,9 @@
 @import '../styles/variables';
 
+body {
+  background-image: $bg-img;
+  background-size: 100%;
+}
 .App {
   text-align: center;
 }

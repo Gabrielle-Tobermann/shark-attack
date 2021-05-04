@@ -4,12 +4,14 @@ import PropTypes from 'prop-types';
 
 function LiveStudent({
   firstName,
-  lastName
+  lastName,
+  image
 }) {
   return (
     <div className='live-student'>
         <Card>
           <CardTitle>{firstName} {lastName}</CardTitle>
+          <img src={image}/>
         </Card>
     </div>
   );
@@ -17,7 +19,8 @@ function LiveStudent({
 
 LiveStudent.propTypes = {
   firstName: PropTypes.string.isRequired,
-  lastName: PropTypes.string.isRequired
+  lastName: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired
 };
 
 export default LiveStudent;
