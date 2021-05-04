@@ -1,4 +1,8 @@
 # Shark Attack 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c8a5864d-d77f-4842-8d67-6913168f5586/deploy-status)](https://app.netlify.com/sites/gt-shark-attack/deploys)
+
+## Netlify
+gt-shark-attack.netlify.app
 
 ## Overview 
 NSS class E14 has fallen into a pool of sharks! When the button is pressed, sadly, a random student is destined to become a shark meal. 
