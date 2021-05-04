@@ -178,7 +178,6 @@ const followTheLight = () => {
   const randomStudent = currentLiveStudents[Math.floor(Math.random() * students.length)];
   const index = students.indexOf(randomStudent);
   students[index].isDead = true;
-  console.warn(randomStudent);
 };
 
 export {
