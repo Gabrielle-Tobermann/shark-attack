@@ -11,7 +11,7 @@ function LiveStudent({
     <div className='live-student'>
         <Card>
           <CardTitle>{firstName} {lastName}</CardTitle>
-          <img src={image}/>
+          <img src={image} className='card-image'/>
         </Card>
     </div>
   );

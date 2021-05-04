@@ -9,9 +9,9 @@ function GraveStone({
 }) {
   return (
     <div className='dearlyBeloved'>
-        <Card>
-          <CardTitle>{firstName} {lastName}</CardTitle>
-          <img src={image}/>
+        <Card style={{ backgroundColor: 'black', borderColor: 'black' }}>
+          <CardTitle> R.I.P {firstName} {lastName}</CardTitle>
+          <img src={image} className='card-image'/>
         </Card>
     </div>
   );

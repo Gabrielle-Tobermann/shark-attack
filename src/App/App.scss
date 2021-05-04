@@ -3,11 +3,39 @@
 body {
   background-image: $bg-img;
   background-size: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+#root {
+  width: 100%;
 }
 .App {
   text-align: center;
+  justify-content: center;
+}
+
+.sharktank {
+  width: 100%;
+}
+
+.dearlyBeloved {
+  margin: 5px;
+  width: 152px;
+  color: $nameColor;
+  font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 .live-student {
   margin: 5px;
+  width: 152px;
+  color: $nameColor;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.card-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 2%;
 }

@@ -4,7 +4,7 @@ import LiveStudent from './LiveStudent';
 
 function SharkTank({ livingStudents }) {
   return (
-    <div className="SharkTank">
+    <div className="SharkTank d-flex flex-wrap justify-content-center">
       {livingStudents.map((element) => (
         <LiveStudent
         key={element.id}
