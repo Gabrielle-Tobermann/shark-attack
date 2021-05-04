@@ -4,7 +4,7 @@ import GraveStone from './GraveStone';
 
 function Graveyard({ deadStudents }) {
   return (
-    <div className="Graveyard">
+    <div className="Graveyard d-flex flex-wrap justify-content-center">
       {deadStudents.map((element) => (
         <GraveStone
         key={element.id}
